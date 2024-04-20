@@ -44,6 +44,6 @@ Chrome and brave doesn't support mobile extensions so it can't be used there.
 **Notes:**
 
 Let me know if you find any bug or unhandled error.
-If you have any feature suggestion write it in this thread: 
+If you have any feature suggestion write it in this thread: https://www.badbreathhalitosis.com/phpBB2/viewtopic.php?t=8101
 
 *For javascript developers that will read the code: I'm sorry guys I wrote it in like 2/3 hours and I've (almost) never used js before so the code is probably bad.*
