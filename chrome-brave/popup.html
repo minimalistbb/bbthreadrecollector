@@ -1,0 +1,46 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup</title>
+    <style>
+        button {
+            margin: 2px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        @media (max-width: 991px) {
+
+            body,
+            .container {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            p {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            button {
+                padding: 20px 40px;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <p id="message"></p>
+    <div class="container">
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

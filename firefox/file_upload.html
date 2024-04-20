@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload Dialog</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            line-height: 1.5em;
+            /* This will set the line height to 1.2 times the font size of the element */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>Upload Thread List from File</h2>
+        <p>You can use a file exported from the extension or create your own.
+            <br>The file structure must be <i>threadID1,threadID2,threadID3</i> without spaces and without comma after
+            the last
+            number.
+            <br><b>Example:</b> <i>1020,1030,1040,1050</i>
+            <br>File extension must be .txt
+        </p>
+        <p id="error" style="color: red;"></p>
+        <p id="success" style="color: green;"></p>
+        <input type="file" id="fileInput">
+    </div>
+    <script src="file_upload.js"></script>
+</body>
+
+</html>

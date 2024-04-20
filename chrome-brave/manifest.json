@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "BBForum Thread Recollector",
+  "version": "1.0",
+  "description": "Simple extension that warns you when a thread has been read in the past",
+  "icons": {
+    "48": "image.png"
+  },
+  "permissions": [
+    "storage",
+    "webNavigation",
+    "tabs",
+    "downloads"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "image.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.badbreathhalitosis.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
+
